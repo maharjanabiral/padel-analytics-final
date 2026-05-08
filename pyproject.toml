@@ -1,0 +1,16 @@
+[project]
+name = "assignment-analyitics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "opencv-python>=4.13.0.92",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.7.2",
+    "torch>=2.11.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.26.0",
+    "ultralytics>=8.4.47",
+]

@@ -1,0 +1,39 @@
+{
+    "backhand": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+    },
+    "forehand": {
+        "precision": 0.8666666666666667,
+        "recall": 0.975,
+        "f1-score": 0.9176470588235294,
+        "support": 40.0
+    },
+    "ready_action": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+    },
+    "serve": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1-score": 0.918918918918919,
+        "support": 40.0
+    },
+    "accuracy": 0.95625,
+    "macro avg": {
+        "precision": 0.9605691056910569,
+        "recall": 0.95625,
+        "f1-score": 0.9560550746825256,
+        "support": 160.0
+    },
+    "weighted avg": {
+        "precision": 0.9605691056910569,
+        "recall": 0.95625,
+        "f1-score": 0.9560550746825257,
+        "support": 160.0
+    }
+}
