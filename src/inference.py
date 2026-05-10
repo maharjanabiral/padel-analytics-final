@@ -42,7 +42,7 @@ pose_model = YOLO("yolov8s-pose.pt").to(device)
 det_model  = YOLO("yolov8x.pt").to(device)
 
 gru_model = PadelGRU(input_size, hidden_size, num_layers, num_classes).to(device)
-gru_model.load_state_dict(torch.load("models/best_tennis_lstm.pth", map_location=device))
+gru_model.load_state_dict(torch.load("models/custom_gru.pth", map_location=device))
 gru_model.eval()
 
 player_buffers   : dict[int, deque] = defaultdict(lambda: deque(maxlen=seq_len))

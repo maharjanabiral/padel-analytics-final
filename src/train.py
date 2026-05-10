@@ -83,7 +83,7 @@ for epoch in range(epochs):
 
             torch.save(
                 model.state_dict(),
-                "best_tennis_lstm.pth"
+                "models/custom_gru.pth"
             )
 
         print(
@@ -95,7 +95,7 @@ for epoch in range(epochs):
 print("\nEvaluating model...")
 
 model.load_state_dict(
-    torch.load("custom_gru.pth")
+    torch.load("models/custom_gru.pth")
 )
 
 model.eval()

@@ -25,7 +25,7 @@ val_dataloader = DataLoader(val_dataset, batch_size, shuffle=False)
 
 model = PadelGRU(input_size, hidden_size, num_layers, num_classes)
 model.load_state_dict(
-    torch.load("models/best_tennis_lstm.pth", map_location=device)
+    torch.load("models/custom_gru.pth", map_location=device)
 )
 
 model.eval()
