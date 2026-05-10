@@ -1,6 +1,6 @@
 # Padel Shot Classification using Computer Vision
 
-A real-time padel shot classification system that combines **YOLOv8 pose estimation**, **YOLOv8 object detection**, and a custom-trained **Bidirectional GRU model** to classify player shots — backhand, forehand, ready position, and serve — directly from video input.
+A real-time padel shot classification system that combines **YOLOv8 pose estimation**, **YOLOv8 object detection**, and a custom-trained **Bidirectional GRU model** to classify player shots backhand, forehand, ready position, and serve directly from video input.
 
 ---
 
@@ -89,8 +89,8 @@ padel-shot-classification/
 │   ├── train.py                        # GRU training loop + checkpointing
 │   ├── evaluation.py                   # Validation metrics + confusion matrix
 │   └── inference.py                    # Real-time local inference (cv2.imshow)
-│
-├── inference_colab.ipynb               # Colab notebook — headless, saves output.mp4
+|   └── inference_colab.ipynb           # Colab notebook — headless, saves output.mp4
+|      
 │
 ├── data/
 │   ├── input_sample_video.mp4          # Input video for inference
@@ -138,7 +138,7 @@ Annotations are stored as JSON files under `data/annotations/<class_name>.json`.
 
 ### Pose Estimation — YOLOv8s-Pose
 
-- **Model:** `yolov8s-pose.pt` (pretrained, Ultralytics) — auto-downloaded on first run
+- **Model:** `yolov8s-pose.pt` (pretrained, Ultralytics) - auto-downloaded on first run
 - **Purpose:** Detect and track players, extract 17 COCO body keypoints per frame
 - **Tracking:** ByteTrack via `.track(persist=True)` for consistent player IDs across frames
 - **Output:** 17 × 3 keypoints (x, y, confidence) per tracked player
