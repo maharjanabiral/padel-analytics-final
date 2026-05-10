@@ -1,4 +1,4 @@
-# 🎾 Padel Shot Classification using Computer Vision
+# Padel Shot Classification using Computer Vision
 
 A real-time padel shot classification system that combines **YOLOv8 pose estimation**, **YOLOv8 object detection**, and a custom-trained **Bidirectional GRU model** to classify player shots — backhand, forehand, ready position, and serve — directly from video input.
 
@@ -8,7 +8,7 @@ Note: This project is a prototype and does not guarantee accurate results in all
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Demo](#demo)
@@ -117,7 +117,7 @@ padel-shot-classification/
 
 The GRU classifier was trained on the **Tennis Player Actions Dataset** from Kaggle:
 
-> 📦 [https://www.kaggle.com/datasets/orvile/tennis-player-actions-dataset](https://www.kaggle.com/datasets/orvile/tennis-player-actions-dataset)
+> [https://www.kaggle.com/datasets/orvile/tennis-player-actions-dataset](https://www.kaggle.com/datasets/orvile/tennis-player-actions-dataset)
 
 The dataset provides keypoint annotations (COCO format, 17 joints) across four action classes:
 
